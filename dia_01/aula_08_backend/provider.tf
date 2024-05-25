@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "terraform-state-biggil"
-    key    = "aula_08_backend"
+    key    = "aula_backend"
     region = "us-west-2"
   }
   required_providers {
