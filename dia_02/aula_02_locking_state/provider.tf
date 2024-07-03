@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "descomplicando-terraform-turma-2024"
+    bucket         = "terraform-state-biggil"
     key            = "aula_backend"
-    region         = "us-east-1"
+    region         = "us-west-2"
     dynamodb_table = "descomplicando-terraform-turma-2024"
   }
   required_providers {
@@ -15,5 +15,5 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  region = "us-east-1"
+  region = "us-west-2"
 }
